@@ -4,7 +4,7 @@
 
 **AI Security & Agent Infrastructure Engineer** · Singapore
 
-[Website](https://www.kielltampubolon.id/) · [LinkedIn](#)
+[Website](https://www.kielltampubolon.id/) · [LinkedIn](https://www.linkedin.com/in/kiel-tampubolon/)
 
 </div>
 
