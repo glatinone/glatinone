@@ -52,6 +52,27 @@ Open protocol for AI agent memory interoperability — like MCP, but for memory.
 **Stack:** HTTP-native spec · Memory Cell schema · access control · decay-ranked semantic search · active→stale→archived lifecycle.
 **Status:** spec stage, pre-PyPI
 
+### Payment Webhook Repair Lab
+
+Local harness for the payment event failures that only show up in production: duplicate events, invalid signatures, malformed payloads, timeouts, upstream failures, partial writes, and out-of-order updates.
+**Stack:** Python - HMAC signature verification on the raw body - strict payload schema - idempotency by event ID plus payload hash - explicit order state machine that rejects stale events - bounded 3-attempt retry into a review queue - authorized replay with an audit timeline.
+**Evidence:** 18 deterministic tests cover the failure matrix end to end. No live provider is contacted.
+**Status:** active, public demo (https://github.com/glatinone/payment-webhook-repair-lab)
+
+### MCP Local-to-Hosted Deployment Fix
+
+Streamable HTTP gateway in front of a small MCP tool registry, with a target smoke client that talks to it the same way a real client would.
+**Stack:** Node.js - per-request bearer auth (401/404/408/503 failure classes) - tenant isolation enforced at the gateway - request-bound expiring approvals for write tools - structured JSON logs with per-call request IDs and secret redaction - deterministic failure injection - runbook for each failure class.
+**Evidence:** 13 runtime tests cover auth, tenant boundary, approval binding, and each failure status.
+**Status:** active, public demo (https://github.com/glatinone/mcp-local-to-hosted-deployment-fix)
+
+### MCP Security Preflight
+
+Bounded pre-release check for teams about to expose MCP tools to users or internal agents.
+**Stack:** Python - static rules for unsafe command declarations, excessive filesystem and network scope, secret-like values, and untrusted input reaching sensitive operations - secret-like values redacted before the report - local fixture server for tenant boundary, write approval, and quota checks - request-bound expiring write approvals - JSON and Markdown reports with rule ID, severity, evidence, and remediation - audit event per decision with reason code and sanitized input hash.
+**Evidence:** 10 deterministic tests cover the rule engine, tenant boundary, approval, quota, and report generation. The output states plainly that the preflight is not a penetration test.
+**Status:** active, public demo (https://github.com/glatinone/mcp-security-preflight)
+
 ---
 
 ## Ecosystem Contributions
