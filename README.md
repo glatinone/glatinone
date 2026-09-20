@@ -1,125 +1,77 @@
-<div align="center">
-
 # Kiell Tampubolon
 
-**AI Security & Agent Infrastructure Engineer** Â· Singapore
+## Applied AI & Cybersecurity Engineer
 
-[Website](https://www.kielltampubolon.id/) Â· [LinkedIn](https://www.linkedin.com/in/kiel-tampubolon/)
+I build trustworthy AI systems and developer infrastructure. My work covers agent security, security automation, memory, evaluation, and practical developer tools.
 
-</div>
+My work sits at the intersection of **AI engineering**, **cybersecurity**, and **developer experience**. I care about systems that are useful in practice, observable when they fail, and honest about their limits.
 
----
+## What I build
 
-## Focus
+- **AI security:** threat-aware agent workflows, tool-use boundaries, configuration scanning, and defensive automation.
+- **Agent infrastructure:** memory, state, authorization, lifecycle behavior, and multi-agent coordination.
+- **Developer tools:** CLIs, MCP servers, SDKs, fixtures, tests, and documentation that make complex systems easier to use.
+- **Practical AI systems:** focused applications and demos that connect technical depth to a real workflow.
 
-I work at the intersection of LLM reasoning, MCP tooling, and SOC automation â€” building the security layer agentic systems need before they're trusted with real infrastructure, and building agents that do SOC work directly.
+## Current work
 
----
+### Agentic Security Lab: flagship direction
 
-## Core Systems
+A reproducible engineering lab for evaluating agents operating against code, GitHub, APIs, and security tools.
 
-### ðŸ›¡ï¸ [mcpscan](https://github.com/glatinone/mcpscan)
-Supply-chain security scanner for MCP servers & Claude Code projects.
-**Problem:** MCP servers ship with zero standard vetting â€” tool-poisoning, command injection, over-broad permissions, and leaked secrets go straight into `.claude/` directories.
-**Stack:** Python, zero runtime deps, SARIF 2.1.0 output for GitHub code scanning, CI-ready.
-**Status:** active, CI-ready
+The core trace is simple:
 
-### ðŸ”Ž [vulnscan](https://github.com/glatinone/vulnscan)
-AI-powered vulnerability intelligence scanner.
-**Problem:** dependency vulnerability lists are noisy â€” a CVE hit doesn't tell you what's actually exploitable in your usage.
-**Stack:** Python Â· OSV.dev lookups across 7 ecosystems (Python, Node, Go, Maven, Ruby, NuGet, Rust) Â· LLM-backed exploitability + remediation analysis.
-**Status:** active
+```text
+agent → identity/policy gate → tool action → audit trace → adversarial scenario → evaluation report
+```
 
-### ðŸŒ [BraveMCP](https://github.com/glatinone/BraveMCP)
-Local-first browser memory, accessible by Claude.
-**Problem:** Claude has no memory of what you've browsed â€” you re-explain context every session.
-**Stack:** TypeScript Â· browser extension + MCP server Â· fully local, no cloud sync.
-**Status:** shipped, v0.2.0
+The lab will connect the projects below into one broader story: how to build AI-enabled systems that remain understandable and controllable under real operating conditions.
 
-### ðŸ”§ [secops-toolkit-mcp](https://github.com/glatinone/secops-toolkit-mcp)
-MCP server exposing defensive SecOps helpers: IOC extraction, defang/refang, hashing, password entropy, CIDR math, repo command-shadowing checks.
-**Status:** active
+> Status: foundation and local design in progress. Public launch follows a reproducible first trace and fresh verification.
 
-### ðŸ¤– [soc-copilotstudio](https://github.com/glatinone/soc-copilotstudio)
-AI-powered SOC built entirely on Microsoft infrastructure â€” no Sentinel, no third-party SIEM.
-**Problem:** most SOC automation assumes a SIEM budget teams don't have.
-**Stack:** Copilot Studio Â· Power Automate Â· Microsoft Graph API Â· 5 coordinating agents (identity threat, phishing investigation, compliance/audit, SOC summary, orchestrator).
-**Status:** active
+## Selected projects
 
-### ðŸ§  [agent-memory-protocol](https://github.com/glatinone/agent-memory-protocol) (AMP)
-Open protocol for AI agent memory interoperability â€” like MCP, but for memory.
-**Problem:** every agent framework reinvents memory storage; nothing shares across vendors or sessions.
-**Stack:** HTTP-native spec Â· Memory Cell schema Â· access control Â· decay-ranked semantic search Â· activeâ†’staleâ†’archived lifecycle.
-**Status:** spec stage, pre-PyPI
+### [mcpscan](https://github.com/glatinone/mcpscan)
 
-### Payment Webhook Repair Lab
+An inspection and security-scanning tool for MCP servers, agent client configurations, source files, and GitHub workflows.
 
-Local harness for the payment event failures that only show up in production: duplicate events, invalid signatures, malformed payloads, timeouts, upstream failures, partial writes, and out-of-order updates.
-**Stack:** Python - HMAC signature verification on the raw body - strict payload schema - idempotency by event ID plus payload hash - explicit order state machine that rejects stale events - bounded 3-attempt retry into a review queue - authorized replay with an audit timeline.
-**Evidence:** 18 deterministic tests cover the failure matrix end to end. No live provider is contacted.
-**Status:** active, public demo (https://github.com/glatinone/payment-webhook-repair-lab)
+**Focus:** detect risky tool behavior, configuration weaknesses, secrets, workflow issues, and other agent-environment hazards before they become runtime surprises.
 
-### MCP Local-to-Hosted Deployment Fix
+### [agent-memory-protocol](https://github.com/glatinone/agent-memory-protocol)
 
-Streamable HTTP gateway in front of a small MCP tool registry, with a target smoke client that talks to it the same way a real client would.
-**Stack:** Node.js - per-request bearer auth (401/404/408/503 failure classes) - tenant isolation enforced at the gateway - request-bound expiring approvals for write tools - structured JSON logs with per-call request IDs and secret redaction - deterministic failure injection - runbook for each failure class.
-**Evidence:** 13 runtime tests cover auth, tenant boundary, approval binding, and each failure status.
-**Status:** active, public demo (https://github.com/glatinone/mcp-local-to-hosted-deployment-fix)
+An HTTP-native protocol and reference implementation for durable agent memory, lifecycle behavior, access control, storage, and SDK usage.
 
-### MCP Security Preflight
+**Focus:** make agent state explicit, inspectable, and useful across sessions and collaborating agents.
 
-Bounded pre-release check for teams about to expose MCP tools to users or internal agents.
-**Stack:** Python - static rules for unsafe command declarations, excessive filesystem and network scope, secret-like values, and untrusted input reaching sensitive operations - secret-like values redacted before the report - local fixture server for tenant boundary, write approval, and quota checks - request-bound expiring write approvals - JSON and Markdown reports with rule ID, severity, evidence, and remediation - audit event per decision with reason code and sanitized input hash.
-**Evidence:** 12 deterministic tests cover the rule engine, credential forwarding, tenant scoping, tenant boundary, approval, quota, and report generation. Release v1.1.0 adds MCP-005 and MCP-006 from real AI incident patterns. The output states plainly that the preflight is not a penetration test.
-**Status:** active, public demo (https://github.com/glatinone/mcp-security-preflight)
+### [secops-toolkit-mcp](https://github.com/glatinone/secops-toolkit-mcp)
 
----
+Defensive security utilities exposed through an MCP server and CLI, including IOC handling, hashing, entropy checks, CIDR analysis, repository checks, and shell-command assessment.
 
-## Ecosystem Contributions
+**Focus:** give analysts and agents small, composable security actions with clear boundaries.
 
-Merged upstream:
+## How I work
 
-| PR | Project | Change |
-|---|---|---|
-| [#4125](https://github.com/zalando/skipper/pull/4125) | zalando/skipper | Isolated + applied 30s timeout to upgrade proxy dialer |
-| [#5817](https://github.com/gpustack/gpustack/pull/5817) | gpustack/gpustack | Propagated asyncio cancellation, removed mutable default args |
-| [#2725](https://github.com/teamhanko/hanko/pull/2725) | teamhanko/hanko | Refactored OAuth providers to propagate context, fixed duplicate defer |
-| [#40](https://github.com/kerlenton/mcpsnoop/pull/40) | kerlenton/mcpsnoop | Added stdin-piped session support |
+1. Start with a concrete workflow and its failure modes.
+2. Build a small, runnable slice.
+3. Test normal paths, adversarial inputs, and operational limits.
+4. Document the evidence, trade-offs, and non-goals.
+5. Turn the result into a demo, case study, or developer-facing guide.
 
-Also tracking the MCP ecosystem via [awesome-mcp-servers](https://github.com/glatinone/awesome-mcp-servers).
+## Beyond one niche
 
----
+MCP is one implementation surface in my work, not the whole identity. I also explore agent memory, evaluation, security automation, workflow systems, and practical AI applications. The common thread is building AI-enabled software that people can inspect, operate, and trust.
 
-## Labs
+## Writing and contact
 
-| Repo | What it does |
-|---|---|
-| [sentinelscout](https://github.com/glatinone/sentinelscout) | Multi-source OSINT aggregator â€” VirusTotal, AlienVault OTX, Shodan, NVD, GitHub â€” with AI correlation |
-| [autoreview](https://github.com/glatinone/autoreview) | AI-powered PR code review CLI, multi-LLM (OpenAI, DeepSeek, Claude, Ollama) |
-| [streamblind-poc](https://github.com/glatinone/streamblind-poc) | PoC + fix for asynchronous telemetry blindness & state desync in AI streaming clients |
-| [claude-token-monitor-usage](https://github.com/glatinone/claude-token-monitor-usage) | Local-first desktop HUD for Claude.ai / Claude Code quota and token-cost tracking |
-| [dev-to-mcp](https://github.com/glatinone/dev-to-mcp) | MCP server for the dev.to API â€” browsing, challenge tracking, authenticated publishing |
-| [devto-challenge-agent](https://github.com/glatinone/devto-challenge-agent) | Multi-agent system for dev.to challenge research, writing, and performance tracking |
-| [nexora-second-brain](https://github.com/glatinone/nexora-second-brain) | AI-powered second brain on Notion, Claude as the intelligence layer |
+- Portfolio: [kielltampubolon.id](https://kielltampubolon.id)
+- Dev.to: [@kielltampubolon](https://dev.to/kielltampubolon)
+- LinkedIn: [Kiell Tampubolon](https://www.linkedin.com/in/kiel-tampubolon/)
+- Medium: [@kielltampubolon](https://kielltampubolon.medium.com)
 
----
+I’m interested in collaborations around AI security, agent infrastructure, developer tooling, technical documentation, and code-backed demos.
 
-## Engineering Evolution
+## Build log
 
-| Period | Repository | Context & Footprint | Stack |
-|---|---|---|---|
-| 2022 | [BARELANG-MRT](https://github.com/glatinone/BARELANG-MRT) / [B-MRT.github.io](https://github.com/glatinone/B-MRT.github.io) | Team site for a robotics competition entry (archived) | HTML |
-| 2023 | [Keamanan-Basis-Data](https://github.com/glatinone/Keamanan-Basis-Data) | Database security coursework, published (archived) | â€” |
-| 2024 | [e_logbook](https://github.com/glatinone/e_logbook) | Logbook web app (archived) | PHP |
-| 2025 | [security-automation-notes](https://github.com/glatinone/security-automation-notes) | Scripts for repetitive security tasks â€” email analysis, log review, system checks | Shell |
-| 2025 | [cybersecurity-communication-guide](https://github.com/glatinone/cybersecurity-communication-guide) | Interactive guide for explaining security concepts to non-technical audiences | TypeScript, React |
-| 2025 | [phising101-kiel](https://github.com/glatinone/phising101-kiel) | Phishing awareness reference material | JavaScript |
-| 2025â€“26 | Freelance client builds â€” [deddy-tour-travel-premier](https://github.com/glatinone/deddy-tour-travel-premier), [malay-rental-batam](https://github.com/glatinone/malay-rental-batam), [4care_medicalcentre](https://github.com/glatinone/4care_medicalcentre), [magal-restaurant](https://github.com/glatinone/magal-restaurant), [stefan-music-learn](https://github.com/glatinone/stefan-music-learn) | Client-commissioned sites (private) | Next.js / TypeScript |
-| 2026 | [ai-webinar-itdel](https://github.com/glatinone/ai-webinar-itdel) | Presentation materials for an AI-in-industry webinar at Institut Teknologi Del | TypeScript |
-| 2026 | [personal-portfolio](https://github.com/glatinone/personal-portfolio) | Earlier Next.js personal site â€” superseded by the live Astro build at kielltampubolon.id (archived) | TypeScript |
-| 2026 | [devto-autopublish](https://github.com/glatinone/devto-autopublish) | Automated publishing pipeline for dev.to | JavaScript |
-| 2026 | [nebula-drift](https://github.com/glatinone/nebula-drift) / [solstice-game](https://github.com/glatinone/solstice-game) | Browser games, zero dependencies | JavaScript / HTML |
-| 2026 | [gmaps-extractor](https://github.com/glatinone/gmaps-extractor) | Chrome extension for B2B lead extraction from Google Maps (private) | JavaScript |
-| 2026 | [automation-logan](https://github.com/glatinone/automation-logan) | HR clock-in/out automation bot, VPS + Cloudflare Workers deploy targets (private) | Python / JavaScript |
+This profile is being rebuilt around fewer, stronger public proofs. Repositories may be archived, made private, or re-scoped as their evidence and maintenance state become clearer.
 
-*(Earlier school/web projects and one-off client sites not listed here remain visible in the full repository list.)*
+<sub>Implementation first. Evidence over hype. Useful systems over noise.</sub>
