@@ -31,6 +31,12 @@ The lab will connect the projects below into one broader story: how to build AI-
 
 ## Selected projects
 
+### [AI Safety Compass](https://github.com/glatinone/ai-safety-compass)
+
+A short checkup for people and small teams that use AI at work.
+
+**Focus:** turn AI safety questions into plain-language decisions and three practical next steps. No account, no data upload, and no security jargon.
+
 ### [mcpscan](https://github.com/glatinone/mcpscan)
 
 An inspection and security-scanning tool for MCP servers, agent client configurations, source files, and GitHub workflows.
