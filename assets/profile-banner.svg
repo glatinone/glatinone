@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Kiell Tampubolon</title>
+  <desc id="desc">Applied AI and Cybersecurity. Agent security, memory, and developer tools. A tool request passes through policy and produces an audit receipt.</desc>
+  <rect width="1200" height="360" fill="#141716"/>
+  <path d="M0 0H1200" stroke="#98edc5" stroke-width="8"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="56" y="69" font-size="17" fill="#98edc5">GLATINONE / ENGINEERING NOTES</text>
+    <text x="52" y="144" font-size="62" font-weight="700" fill="#f4f6f4">Kiell Tampubolon</text>
+    <text x="56" y="192" font-size="26" fill="#d6ded9">Applied AI &amp; Cybersecurity</text>
+    <text x="56" y="238" font-size="18" fill="#a8b5ad">Agent security. Memory. Developer tools.</text>
+    <path d="M56 276H704" stroke="#3a4740"/>
+    <text x="56" y="313" font-size="16" fill="#98edc5">BUILD</text>
+    <text x="178" y="313" font-size="16" fill="#f4f6f4">INSPECT</text>
+    <text x="326" y="313" font-size="16" fill="#f1a390">VERIFY</text>
+    <path d="M780 54V310" stroke="#3a4740"/>
+    <g font-family="Consolas, monospace" font-size="18">
+      <text x="829" y="83" fill="#a8b5ad">01 / TOOL REQUEST</text>
+      <path d="M848 101V128" stroke="#78897f" stroke-width="2"/>
+      <rect x="828" y="132" width="312" height="64" rx="4" fill="#21382d" stroke="#98edc5"/>
+      <circle cx="853" cy="164" r="5" fill="#98edc5"/>
+      <text x="874" y="171" fill="#98edc5">POLICY CHECK</text>
+      <path d="M848 201V229" stroke="#78897f" stroke-width="2"/>
+      <text x="829" y="258" fill="#f4f6f4">02 / AUDIT RECEIPT</text>
+      <text x="829" y="300" font-size="14" fill="#f1a390">explicit boundaries.</text>
+    </g>
+  </g>
+</svg>

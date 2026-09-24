@@ -1,87 +1,72 @@
-# Kiell Tampubolon
+<p align="center">
+  <img src="assets/profile-banner.svg" width="100%" alt="Kiell Tampubolon. Applied AI and Cybersecurity. Agent security, memory, and developer tools." />
+</p>
 
-## Applied AI & Cybersecurity Engineer
+<p align="center">
+  <a href="https://kielltampubolon.id">Portfolio</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="https://dev.to/kielltampubolon">DEV.to</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/kiel-tampubolon/">LinkedIn</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="https://kielltampubolon.medium.com">Medium</a>
+</p>
 
-I build trustworthy AI systems and developer infrastructure. My work covers agent security, security automation, memory, evaluation, and practical developer tools.
+## Building AI systems you can inspect.
 
-My work sits at the intersection of **AI engineering**, **cybersecurity**, and **developer experience**. I care about systems that are useful in practice, observable when they fail, and honest about their limits.
+I'm **Kiell**, an applied AI and cybersecurity engineer. I build tools for securing agent actions, making memory explicit, and turning security workflows into runnable software.
+
+My work starts with a practical question: **what happens when the system gets it wrong?** I explore that through policy boundaries, adversarial cases, audit trails, and developer tools.
 
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
 <a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-836%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED" alt="836 DEV.to followers" /></a>
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 
-## What I build
+## In Focus / Agentic Security Lab
 
-- **AI security:** threat-aware agent workflows, tool-use boundaries, configuration scanning, and defensive automation.
-- **Agent infrastructure:** memory, state, authorization, lifecycle behavior, and multi-agent coordination.
-- **Developer tools:** CLIs, MCP servers, SDKs, fixtures, tests, and documentation that make complex systems easier to use.
-- **Practical AI systems:** focused applications and demos that connect technical depth to a real workflow.
+**What should an agent be allowed to do, and how do you prove it respected the boundary?**
 
-## Current work
-
-### Agentic Security Lab: flagship direction
-
-A reproducible engineering lab for evaluating agents operating against code, GitHub, APIs, and security tools.
-
-The core trace is simple:
+[Agentic Security Lab](https://github.com/glatinone/agentic-security-lab) explores that question with a deny-by-default policy boundary for tool calls, runtime enforcement, adversarial cases, and audit receipts.
 
 ```text
-agent → identity/policy gate → tool action → audit trace → adversarial scenario → evaluation report
+Agent request  -->  Policy check  -->  Tool action  -->  Audit receipt
+                        |
+                   Deny by default
 ```
 
-The lab will connect the projects below into one broader story: how to build AI-enabled systems that remain understandable and controllable under real operating conditions.
+## Selected Work
 
-> Status: foundation and local design in progress. Public launch follows a reproducible first trace and fresh verification.
+| Project | What it does | Area |
+| :--- | :--- | :--- |
+| **[mcpscan](https://github.com/glatinone/mcpscan)** | Scans MCP servers and agent projects for risky tools, permissions, commands, and secrets before install. | Agent security |
+| **[agent-memory-protocol](https://github.com/glatinone/agent-memory-protocol)** | An open protocol and reference implementation for durable, inspectable agent memory. | Agent infrastructure |
+| **[ai-safety-compass](https://github.com/glatinone/ai-safety-compass)** | A local-first workspace that turns AI workflow facts into safeguards, hard stops, and review records. | Applied AI |
+| **[secops-toolkit-mcp](https://github.com/glatinone/secops-toolkit-mcp)** | Defensive utilities for IOC handling, hashing, CIDR checks, repository checks, and command assessment. | Security tooling |
 
-## Selected projects
+<details>
+<summary><b>More from the workbench</b></summary>
 
-### [AI Safety Compass](https://github.com/glatinone/ai-safety-compass)
+- **[autoreview](https://github.com/glatinone/autoreview)**: AI-powered pull request review in the terminal, with support for multiple model providers.
+- **[dev-to-mcp](https://github.com/glatinone/dev-to-mcp)**: Browse DEV.to articles and challenges, and publish authenticated posts through MCP.
+- **[human-approval-gate](https://github.com/glatinone/human-approval-gate)**: An Agent Zero plugin that pauses high-risk actions for human approval.
+- **[payment-webhook-repair-lab](https://github.com/glatinone/payment-webhook-repair-lab)**: A local lab for retries, idempotency, state protection, and webhook failure recovery.
 
-A short checkup for people and small teams that use AI at work.
+</details>
 
-**Focus:** turn AI safety questions into plain-language decisions and three practical next steps. No account, no data upload, and no security jargon.
+## Tools & Approach
 
-### [mcpscan](https://github.com/glatinone/mcpscan)
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Shell-181717?style=flat-square&amp;logo=gnubash&amp;logoColor=white" alt="Shell" />
+</p>
 
-An inspection and security-scanning tool for MCP servers, agent client configurations, source files, and GitHub workflows.
+Concrete workflow first. A small runnable implementation next. Then normal paths, adversarial inputs, and documented limits. I care about useful demos and evidence that someone else can reproduce.
 
-**Focus:** detect risky tool behavior, configuration weaknesses, secrets, workflow issues, and other agent-environment hazards before they become runtime surprises.
+## Writing & Collaboration
 
-### [agent-memory-protocol](https://github.com/glatinone/agent-memory-protocol)
+I write about AI engineering, security, and what I learn while building. Find my articles on **[DEV.to](https://dev.to/kielltampubolon)** and **[Medium](https://kielltampubolon.medium.com)**.
 
-An HTTP-native protocol and reference implementation for durable agent memory, lifecycle behavior, access control, storage, and SDK usage.
+For collaborations around agent security, developer tools, technical documentation, or code-backed demos, connect on **[LinkedIn](https://www.linkedin.com/in/kiel-tampubolon/)**.
 
-**Focus:** make agent state explicit, inspectable, and useful across sessions and collaborating agents.
+---
 
-### [secops-toolkit-mcp](https://github.com/glatinone/secops-toolkit-mcp)
-
-Defensive security utilities exposed through an MCP server and CLI, including IOC handling, hashing, entropy checks, CIDR analysis, repository checks, and shell-command assessment.
-
-**Focus:** give analysts and agents small, composable security actions with clear boundaries.
-
-## How I work
-
-1. Start with a concrete workflow and its failure modes.
-2. Build a small, runnable slice.
-3. Test normal paths, adversarial inputs, and operational limits.
-4. Document the evidence, trade-offs, and non-goals.
-5. Turn the result into a demo, case study, or developer-facing guide.
-
-## Beyond one niche
-
-MCP is one implementation surface in my work, not the whole identity. I also explore agent memory, evaluation, security automation, workflow systems, and practical AI applications. The common thread is building AI-enabled software that people can inspect, operate, and trust.
-
-## Writing and contact
-
-- Portfolio: [kielltampubolon.id](https://kielltampubolon.id)
-- Dev.to: [@kielltampubolon](https://dev.to/kielltampubolon)
-- LinkedIn: [Kiell Tampubolon](https://www.linkedin.com/in/kiel-tampubolon/)
-- Medium: [@kielltampubolon](https://kielltampubolon.medium.com)
-
-I’m interested in collaborations around AI security, agent infrastructure, developer tooling, technical documentation, and code-backed demos.
-
-## Build log
-
-This profile is being rebuilt around fewer, stronger public proofs. Repositories may be archived, made private, or re-scoped as their evidence and maintenance state become clearer.
-
-<sub>Implementation first. Evidence over hype. Useful systems over noise.</sub>
+<sub>Implementation first. Evidence over hype.</sub>
