@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile-banner.svg" width="100%" alt="Kiell Tampubolon. Applied AI and Cybersecurity. Agent security, memory, and developer tools." />
+  <img src="assets/profile-animated.svg" width="100%" alt="Kiell Tampubolon. Applied AI and Cybersecurity. Animated agent request, policy check, and audit receipt." />
 </p>
 
 <p align="center">
@@ -9,27 +9,21 @@
   <a href="https://kielltampubolon.medium.com">Medium</a>
 </p>
 
-## Building AI systems you can inspect.
+<p align="center"><b>Agents that remember. Actions with boundaries. Systems you can inspect.</b></p>
 
-I'm **Kiell**, an applied AI and cybersecurity engineer. I build tools for securing agent actions, making memory explicit, and turning security workflows into runnable software.
-
-My work starts with a practical question: **what happens when the system gets it wrong?** I explore that through policy boundaries, adversarial cases, audit trails, and developer tools.
+I build at the intersection of **applied AI, cybersecurity, and developer tools**. My projects explore what agents should remember, what they should be allowed to do, and what evidence they leave behind.
 
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
 <a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-836%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED" alt="836 DEV.to followers" /></a>
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 
-## In Focus / Agentic Security Lab
+## Featured / Agentic Security Lab
 
 **What should an agent be allowed to do, and how do you prove it respected the boundary?**
 
 [Agentic Security Lab](https://github.com/glatinone/agentic-security-lab) explores that question with a deny-by-default policy boundary for tool calls, runtime enforcement, adversarial cases, and audit receipts.
 
-```text
-Agent request  -->  Policy check  -->  Tool action  -->  Audit receipt
-                        |
-                   Deny by default
-```
+**[Explore the lab &rarr;](https://github.com/glatinone/agentic-security-lab)**
 
 ## Selected Work
 
@@ -50,7 +44,7 @@ Agent request  -->  Policy check  -->  Tool action  -->  Audit receipt
 
 </details>
 
-## Tools & Approach
+## Stack & Principles
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
