@@ -6,7 +6,9 @@ I build trustworthy AI systems and developer infrastructure. My work covers agen
 
 My work sits at the intersection of **AI engineering**, **cybersecurity**, and **developer experience**. I care about systems that are useful in practice, observable when they fail, and honest about their limits.
 
-<!-- DEVTO-FOLLOWERS-COUNT:START -->**836** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
+<!-- DEVTO-FOLLOWERS-COUNT:START -->
+<a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-836%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED" alt="836 DEV.to followers" /></a>
+<!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 ## What I build
 
@@ -83,5 +85,3 @@ I’m interested in collaborations around AI security, agent infrastructure, dev
 This profile is being rebuilt around fewer, stronger public proofs. Repositories may be archived, made private, or re-scoped as their evidence and maintenance state become clearer.
 
 <sub>Implementation first. Evidence over hype. Useful systems over noise.</sub>
-
-

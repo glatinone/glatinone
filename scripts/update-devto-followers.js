@@ -7,6 +7,7 @@ const README_FILE = "README.md";
 const START_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:START -->";
 const END_MARKER = "<!-- DEVTO-FOLLOWERS-COUNT:END -->";
 const USER_AGENT = `${DEVTO_USERNAME}-github-profile`;
+const DEVTO_PROFILE_URL = `https://dev.to/${DEVTO_USERNAME}`;
 
 if (!DEVTO_API_KEY) {
   throw new Error("Missing required DEVTO_API_KEY environment variable.");
@@ -93,7 +94,10 @@ const updateReadme = async () => {
     throw new Error(`README.md must contain ${START_MARKER} and ${END_MARKER}.`);
   }
 
-  const newContent = `${START_MARKER}**${count.toLocaleString("en-US")}** DEV.to followers${END_MARKER}`;
+  const formattedCount = count.toLocaleString("en-US");
+  const badgeLabel = encodeURIComponent(`${formattedCount} followers`);
+  const badgeUrl = `https://img.shields.io/badge/DEV.to-${badgeLabel}-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED`;
+  const newContent = `${START_MARKER}\n<a href="${DEVTO_PROFILE_URL}"><img src="${badgeUrl}" alt="${formattedCount} DEV.to followers" /></a>\n${END_MARKER}`;
   const regex = new RegExp(`${START_MARKER}[\\s\\S]*?${END_MARKER}`, "g");
 
   fs.writeFileSync(README_FILE, readmeContent.replace(regex, newContent));
