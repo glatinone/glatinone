@@ -6,6 +6,8 @@ I build trustworthy AI systems and developer infrastructure. My work covers agen
 
 My work sits at the intersection of **AI engineering**, **cybersecurity**, and **developer experience**. I care about systems that are useful in practice, observable when they fail, and honest about their limits.
 
+<!-- DEVTO-FOLLOWERS-COUNT:START -->**0** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
+
 ## What I build
 
 - **AI security:** threat-aware agent workflows, tool-use boundaries, configuration scanning, and defensive automation.
@@ -81,3 +83,5 @@ I’m interested in collaborations around AI security, agent infrastructure, dev
 This profile is being rebuilt around fewer, stronger public proofs. Repositories may be archived, made private, or re-scoped as their evidence and maintenance state become clearer.
 
 <sub>Implementation first. Evidence over hype. Useful systems over noise.</sub>
+
+
