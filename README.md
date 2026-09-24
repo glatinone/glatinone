@@ -6,7 +6,7 @@ I build trustworthy AI systems and developer infrastructure. My work covers agen
 
 My work sits at the intersection of **AI engineering**, **cybersecurity**, and **developer experience**. I care about systems that are useful in practice, observable when they fail, and honest about their limits.
 
-<!-- DEVTO-FOLLOWERS-COUNT:START -->**0** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
+<!-- DEVTO-FOLLOWERS-COUNT:START -->**836** DEV.to followers<!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 ## What I build
 
