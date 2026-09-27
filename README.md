@@ -44,6 +44,20 @@ I build at the intersection of **applied AI, cybersecurity, and developer tools*
 
 </details>
 
+## Merged Upstream
+
+Fixes I found while using these tools, merged by their maintainers.
+
+| Project | Contribution |
+| :--- | :--- |
+| **[ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender/pull/324)** | Handle multi-byte UTF-8 sequences split across socket reads. |
+| **[NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector/pull/381)** | Stop the code-example heuristic from silently dropping SKILL.md findings. |
+| **[teamhanko/hanko](https://github.com/teamhanko/hanko/pull/2725)** | Propagate context and fix a duplicate defer in the OAuth providers. |
+| **[Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard/pull/541)** | Surface the underlying error when an MCP scan can't connect. |
+| **[gpustack/gpustack](https://github.com/gpustack/gpustack/pull/5817)** | Propagate asyncio cancellation and remove mutable default arguments. |
+| **[zalando/skipper](https://github.com/zalando/skipper/pull/4125)** | Isolate the upgrade proxy dialer and give it a 30s timeout. |
+| **[agent0ai/a0-plugins](https://github.com/agent0ai/a0-plugins/pulls?q=is%3Apr+author%3Aglatinone+is%3Amerged)** | Three Agent Zero plugins: human approval gate, chat jumper, chat status lights. |
+
 ## Stack & Principles
 
 <p>
