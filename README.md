@@ -14,7 +14,7 @@
 I build at the intersection of **applied AI, cybersecurity, and developer tools**. My projects explore what agents should remember, what they should be allowed to do, and what evidence they leave behind.
 
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
-<a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-1%2C002%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED" alt="1,002 DEV.to followers" /></a>
+<a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-999%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED" alt="999 DEV.to followers" /></a>
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 
 ## Featured / Agentic Security Lab
