@@ -3,7 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://kielltampubolon.id">Portfolio</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="https://www.kielltampubolon.id">Portfolio</a> &nbsp;&nbsp;/&nbsp;&nbsp;
+  <a href="https://www.kielltampubolon.id/writing/">Writing</a> &nbsp;&nbsp;/&nbsp;&nbsp;
   <a href="https://dev.to/kielltampubolon">DEV.to</a> &nbsp;&nbsp;/&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/kiel-tampubolon/">LinkedIn</a> &nbsp;&nbsp;/&nbsp;&nbsp;
   <a href="https://kielltampubolon.medium.com">Medium</a>
@@ -71,7 +72,15 @@ Concrete workflow first. A small runnable implementation next. Then normal paths
 
 ## Writing & Collaboration
 
-I write about AI engineering, security, and what I learn while building. Find my articles on **[DEV.to](https://dev.to/kielltampubolon)** and **[Medium](https://kielltampubolon.medium.com)**.
+I write about AI agent security, MCP, and what I learn while building. Every article lives at **[kielltampubolon.id/writing](https://www.kielltampubolon.id/writing/)**, with copies on **[DEV.to](https://dev.to/kielltampubolon)** and **[Medium](https://kielltampubolon.medium.com)**.
+
+**Start here**
+
+- [What is MCP security? Common attacks and how to scan your MCP servers](https://www.kielltampubolon.id/writing/what-is-mcp-security-common-attacks-and-how-to-scan-your-mcp-servers/)
+- [A fake MCP server spent three months earning trust. The tells were there](https://www.kielltampubolon.id/writing/a-fake-mcp-server-spent-three-months-earning-trust-the-tells-were-there/)
+- [My AI agent said we were under attack. The logs said otherwise.](https://www.kielltampubolon.id/writing/my-ai-agent-said-we-were-under-attack-the-logs-said-otherwise/)
+- [We planted 10 vulnerabilities to test free Semgrep. It reported 3.](https://www.kielltampubolon.id/writing/we-planted-10-vulnerabilities-to-test-free-semgrep-it-reported-3/)
+- [The eMudhra CA keys were one byte long. Does your container still trust them?](https://www.kielltampubolon.id/writing/the-emudhra-ca-keys-were-one-byte-long-does-your-container-still-trust-them/)
 
 For collaborations around agent security, developer tools, technical documentation, or code-backed demos, connect on **[LinkedIn](https://www.linkedin.com/in/kiel-tampubolon/)**.
 
