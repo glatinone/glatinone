@@ -76,7 +76,7 @@ I write about AI agent security, MCP, and what I learn while building. Every art
 
 **Start here**
 
-- [MCP security guide: every attack, every check, in one place](https://www.kielltampubolon.id/writing/mcp-security-guide/)
+- [MCP Security: A Practitioner's Guide](https://www.kielltampubolon.id/writing/mcp-security-guide/)
 - [I scanned 30 Docker images. 10 still trust the root Chrome is dropping](https://www.kielltampubolon.id/writing/the-emudhra-fallout-part-2-i-scanned-30-docker-images-10-still-trust-the-root-chrome-is-dropping/)
 - [I wrote an MCP server auth test harness for the 2026-07-28 spec](https://www.kielltampubolon.id/writing/i-wrote-an-mcp-server-auth-test-harness-for-the-2026-07-28-spec-here-is-what-broke-first/)
 - [What is MCP security? Common attacks and how to scan your MCP servers](https://www.kielltampubolon.id/writing/what-is-mcp-security-common-attacks-and-how-to-scan-your-mcp-servers/)
