@@ -90,10 +90,10 @@ Fixes I found while using these tools, reviewed and merged by their maintainers.
 - **[carbonpilot](https://github.com/glatinone/carbonpilot)**: AI carbon decision engine: measure, find what moved, simulate interventions, rank actions.
 - **[ai-safety-compass](https://github.com/glatinone/ai-safety-compass)**: local-first workspace that turns AI workflow facts into safeguards, hard stops and review records.
 - **[jepret](https://github.com/glatinone/jepret)**: 300 KB screenshot and annotation tool for Windows in Rust, raw Win32 and GDI+, idles at 1.3 MB of RAM.
-- **[dev-to-mcp](https://github.com/glatinone/dev-to-mcp)** and **[devto-autopublish](https://github.com/glatinone/devto-autopublish)**: MCP server for the dev.to API, and a Telegram-to-dev.to drafting pipeline.
+- **[dev-to-mcp](https://github.com/glatinone/dev-to-mcp)** and **[devto-autopublish](https://github.com/glatinone/devto-autopublish)**: a dev.to MCP server extended from [nickytonline/dev-to-mcp](https://github.com/nickytonline/dev-to-mcp) with stdio, write and challenge tools, and a Telegram-to-dev.to drafting pipeline.
 - **[chat-jumper](https://github.com/glatinone/chat-jumper)** and **[chat-status-lights](https://github.com/glatinone/chat-status-lights)**: Agent Zero plugins, merged upstream into a0-plugins.
 - **[payment-webhook-repair-lab](https://github.com/glatinone/payment-webhook-repair-lab)**: retries, idempotency and state protection for payment webhooks.
-- **[siber-labs](https://github.com/glatinone/siber-labs)** and **[phising101-kiel](https://github.com/glatinone/phising101-kiel)**: cybersecurity and phishing awareness apps in Bahasa Indonesia.
+- **[siber-labs](https://github.com/glatinone/siber-labs)**: Loren Labs, a 15-module capture-the-flag awareness arena for cybersecurity exhibition booths. **[phising101-kiel](https://github.com/glatinone/phising101-kiel)**: the interactive deck from my Hacktiv8 webinar "Phishing 101: Jangan Jadi Korban!" (both in Bahasa Indonesia).
 - **[icann-explorer](https://github.com/glatinone/icann-explorer)**: bilingual (ID/EN) interactive guide to the ICANN ecosystem.
 
 </details>
