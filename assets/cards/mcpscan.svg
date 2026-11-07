@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="300" viewBox="0 0 540 300" role="img" aria-label="mcpscan">
+<style>text{font-family:'Segoe UI',Arial,sans-serif}.m{font-family:Consolas,'Courier New',monospace}</style>
+<rect width="540" height="300" rx="10" fill="#101213"/>
+<rect x="0.5" y="0.5" width="539" height="299" rx="10" fill="none" stroke="#303639"/>
+<path d="M24 1H516" stroke="#76efc4" stroke-width="3"/>
+<text x="28" y="44" class="m" font-size="12" fill="#76efc4" letter-spacing="1">02 / MCP SUPPLY-CHAIN SECURITY</text>
+<text x="28" y="88" font-size="30" font-weight="700" fill="#f5f7f8">mcpscan</text>
+<text x="28" y="124" font-size="17" fill="#b9c2c7">Scan an MCP server or .claude/ project for tool</text>
+<text x="28" y="148" font-size="17" fill="#b9c2c7">poisoning, injection and secrets before you install it.</text>
+<text x="28" y="200" class="m" font-size="22" font-weight="700" fill="#eeb987">30 rules · zero runtime deps</text>
+<rect x="28" y="232" width="192.20000000000002" height="30" rx="15" fill="#191e21" stroke="#3b474c"/>
+<text x="39" y="252" class="m" font-size="12.5" fill="#f5f7f8">pip install mcpscan-cli</text>
+<rect x="230.20000000000002" y="232" width="59.0" height="30" rx="15" fill="#191e21" stroke="#3b474c"/>
+<text x="241.20000000000002" y="252" class="m" font-size="12.5" fill="#f5f7f8">SARIF</text>
+<rect x="299.20000000000005" y="232" width="140.4" height="30" rx="15" fill="#191e21" stroke="#3b474c"/>
+<text x="310.20000000000005" y="252" class="m" font-size="12.5" fill="#f5f7f8">OWASP MCP Top 10</text>
+<text x="512" y="44" text-anchor="end" class="m" font-size="12" fill="#8b969b">VIEW REPO →</text></svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="250" viewBox="0 0 1100 250" role="img" aria-label="Merged upstream in 9 open-source projects">
+<style>text{font-family:'Segoe UI',Arial,sans-serif}.m{font-family:Consolas,'Courier New',monospace}</style>
+<rect width="1100" height="250" rx="10" fill="#101213"/>
+<rect x="0.5" y="0.5" width="1099" height="249" rx="10" fill="none" stroke="#303639"/>
+<path d="M24 1H1076" stroke="#76efc4" stroke-width="3"/>
+<text x="36" y="48" class="m" font-size="13" fill="#76efc4" letter-spacing="1">MERGED UPSTREAM</text>
+<text x="1064" y="48" text-anchor="end" class="m" font-size="13" fill="#8b969b">FIXES REVIEWED AND MERGED BY MAINTAINERS</text>
+<rect x="36" y="70" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="52" y="96" font-size="16" fill="#f5f7f8">headroomlabs-ai/headroom</text>
+<text x="352" y="96" text-anchor="end" class="m" font-size="14" fill="#eeb987">79k ★</text>
+<rect x="388" y="70" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="404" y="96" font-size="16" fill="#f5f7f8">ahujasid/mcp-for-blender</text>
+<text x="704" y="96" text-anchor="end" class="m" font-size="14" fill="#eeb987">33k ★</text>
+<rect x="740" y="70" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="756" y="96" font-size="16" fill="#f5f7f8">NVIDIA/SkillSpector</text>
+<text x="1056" y="96" text-anchor="end" class="m" font-size="14" fill="#eeb987">24k ★</text>
+<rect x="36" y="126" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="52" y="152" font-size="16" fill="#f5f7f8">teamhanko/hanko</text>
+<text x="352" y="152" text-anchor="end" class="m" font-size="14" fill="#eeb987">9k ★</text>
+<rect x="388" y="126" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="404" y="152" font-size="16" fill="#f5f7f8">Tencent/AI-Infra-Guard</text>
+<text x="704" y="152" text-anchor="end" class="m" font-size="14" fill="#eeb987">7k ★</text>
+<rect x="740" y="126" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="756" y="152" font-size="16" fill="#f5f7f8">gpustack/gpustack</text>
+<text x="1056" y="152" text-anchor="end" class="m" font-size="14" fill="#eeb987">6k ★</text>
+<rect x="36" y="182" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="52" y="208" font-size="16" fill="#f5f7f8">zalando/skipper</text>
+<text x="352" y="208" text-anchor="end" class="m" font-size="14" fill="#eeb987">3k ★</text>
+<rect x="388" y="182" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="404" y="208" font-size="16" fill="#f5f7f8">kerlenton/mcpsnoop</text>
+<text x="704" y="208" text-anchor="end" class="m" font-size="14" fill="#eeb987">367 ★</text>
+<rect x="740" y="182" width="332" height="42" rx="6" fill="#191e21" stroke="#3b474c"/>
+<text x="756" y="208" font-size="16" fill="#f5f7f8">agent0ai/a0-plugins</text>
+<text x="1056" y="208" text-anchor="end" class="m" font-size="14" fill="#eeb987">3 plugins</text>
+</svg>
