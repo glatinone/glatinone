@@ -24,8 +24,8 @@
   <text x="68" y="53" class="mono" font-size="15" fill="#76efc4">GLATINONE</text>
   <text x="1060" y="53" text-anchor="end" class="mono" font-size="13" fill="#8b969b">AI / SECURITY / SYSTEMS</text>
   <text x="37" y="135" font-size="65" font-weight="700" fill="#f5f7f8">Kiell Tampubolon<tspan fill="#76efc4">.</tspan></text>
-  <text x="40" y="176" font-size="23" fill="#b9c2c7">Applied AI &amp; Cybersecurity Engineer</text>
-  <text x="40" y="214" font-size="17" fill="#8b969b">Building agents with memory, boundaries, and evidence.</text>
+  <text x="40" y="176" font-size="23" fill="#b9c2c7">Cybersecurity Engineer · AI Agent &amp; MCP Security</text>
+  <text x="40" y="214" font-size="17" fill="#8b969b">Policy boundaries, scanners and evidence for agent tool calls.</text>
   <path d="M40 247H1060" stroke="#303639"/>
   <g class="mono" font-size="12" fill="#8b969b">
     <text x="40" y="277">01 / THE REQUEST</text>
