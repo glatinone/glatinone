@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/profile-animated.svg" width="100%" alt="Kiell Tampubolon. Applied AI and Cybersecurity. Animated agent request, policy check, and audit receipt." />
+  <img src="assets/profile-hero.svg" width="100%" alt="I secure AI agents and MCP servers. A policy log allows a safe file read, denies a shell pipe and an SSH key read, and flags a risky MCP server." />
 </p>
-
-<p align="center"><b>I secure AI agents and MCP servers.</b><br />Scanners, auth test harnesses and policy boundaries for agent tool calls.</p>
 
 <p align="center">
   <a href="https://www.kielltampubolon.id">Portfolio</a> &nbsp;/&nbsp;
