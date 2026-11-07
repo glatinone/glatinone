@@ -96,7 +96,7 @@ const updateReadme = async () => {
 
   const formattedCount = count.toLocaleString("en-US");
   const badgeLabel = encodeURIComponent(`${formattedCount} followers`);
-  const badgeUrl = `https://img.shields.io/badge/DEV.to-${badgeLabel}-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED`;
+  const badgeUrl = `https://img.shields.io/badge/DEV.to-${badgeLabel}-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=5FF2C0&labelColor=0A0E13&color=12302A`;
   const newContent = `${START_MARKER}\n<a href="${DEVTO_PROFILE_URL}"><img src="${badgeUrl}" alt="${formattedCount} DEV.to followers" /></a>\n${END_MARKER}`;
   const regex = new RegExp(`${START_MARKER}[\\s\\S]*?${END_MARKER}`, "g");
 

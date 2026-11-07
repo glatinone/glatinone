@@ -12,10 +12,10 @@
 
 <p align="center">
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
-<a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-1%2C052%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=0A0A0A&color=2F80ED" alt="1,052 DEV.to followers" /></a>
+<a href="https://dev.to/kielltampubolon"><img src="https://img.shields.io/badge/DEV.to-1%2C052%20followers-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=5FF2C0&labelColor=0A0E13&color=12302A" alt="1,052 DEV.to followers" /></a>
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
-<a href="#merged-upstream"><img src="https://img.shields.io/badge/merged_upstream-9_projects-0A0A0A?style=for-the-badge&labelColor=0A0A0A&color=1F9D6B" alt="Merged upstream in 9 projects" /></a>
-<a href="https://pypi.org/project/mcpscan-cli/"><img src="https://img.shields.io/badge/pypi-mcpscan--cli-0A0A0A?style=for-the-badge&logo=pypi&logoColor=white&labelColor=0A0A0A&color=3775A9" alt="mcpscan-cli on PyPI" /></a>
+<a href="#merged-upstream"><img src="https://img.shields.io/badge/merged_upstream-9_projects-0A0A0A?style=for-the-badge&labelColor=0A0E13&color=12302A" alt="Merged upstream in 9 projects" /></a>
+<a href="https://pypi.org/project/mcpscan-cli/"><img src="https://img.shields.io/badge/pypi-mcpscan--cli-0A0A0A?style=for-the-badge&logo=pypi&logoColor=5FF2C0&labelColor=0A0E13&color=12302A" alt="mcpscan-cli on PyPI" /></a>
 </p>
 
 ## Projects
