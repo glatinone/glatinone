@@ -46,7 +46,7 @@ More at [kielltampubolon.id/writing](https://www.kielltampubolon.id/writing/)
 <a href="https://www.kielltampubolon.id">Website</a> ·
 <a href="https://www.linkedin.com/in/kiel-tampubolon/">LinkedIn</a> ·
 <!-- DEVTO-FOLLOWERS-COUNT:START -->
-<a href="https://dev.to/kielltampubolon">DEV.to</a> (1,052 followers)
+<a href="https://dev.to/kielltampubolon">DEV.to</a> (1,053 followers)
 <!-- DEVTO-FOLLOWERS-COUNT:END -->
 · <a href="https://kielltampubolon.medium.com">Medium</a>
 </p>
